@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Список задач</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Список задач</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список задач</title>
+    <link rel="icon" type="image/x-icon" href="./public/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todo-list-wrapper">
+      <h1 class="todo-list-title">Список задач</h1>
+      <hr />
+      <div class="todo-form">
+        <input
+          type="text"
+          class="task-input"
+          placeholder="Введите новую задачу..."
+        />
+        <button type="button" class="add-task">Добавить</button>
+      </div>
+
+      <ul class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
